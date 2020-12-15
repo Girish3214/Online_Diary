@@ -1,0 +1,9 @@
+.main-body {
+  background: #eff8ff;
+  max-height: 250px;
+  padding: 20px;
+}
+
+.container {
+  height: 1000px;
+}

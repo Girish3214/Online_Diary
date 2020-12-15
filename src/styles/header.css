@@ -1,0 +1,13 @@
+.title {
+  background: #ffe5b9;
+  padding: 10px 0;
+  height: auto;
+}
+
+.title-name {
+  display: flex;
+  font-size: 2.5rem;
+  font-weight: bold;
+  justify-content: center;
+  color: blueviolet;
+}

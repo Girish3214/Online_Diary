@@ -1,10 +1,16 @@
 
-
+import Header from "./components/Header";
+import Section from "./components/Section";
+import "./styles/section.css"
 const App = () => {
   return (
-    <div>
-      <h1></h1>
+    <div  className="container">
+      <div>
+        <Header />
+        <Section />
+      </div>
     </div>
+
   );
 }
 
