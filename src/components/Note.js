@@ -12,33 +12,18 @@ const Note = ({ date, title, content, id, loadNotes}) => {
 
     return (
         <div className="note">
-        {/* <Link id="title-link" to={`/user/view/${id}`}><h1>{title}</h1></Link>
-            <p>{date}</p>
-            {content.length<50 ? <p>{content}</p> :<p>{ content.substring(0,50)}...<Link to={`/user/view/${id}`}>Read More</Link> </p>}
-            <div className="btn-container">
-               <Link to={`/users/edit/${id}`}>
-                    <button className="btn" >Edit</button>
-               </Link> 
-                <button className="btn" onClick={deleteHandler}>delete</button>
-            </div> */}
+            <table className="table  table-striped table-hover table-bordered">
 
-
-            <table className="table note">
                 <tbody>
                     <tr>
-                    <td>{date}</td>
-                    <th scope="row"><Link id="title-link" to={`/user/view/${id}`}><h1>{title}</h1></Link></th>
-                    <td>{content.length<50 ? <p>{content}</p> :<p>{ content.substring(0,50)}...<Link to={`/user/view/${id}`}>Read More</Link> </p>}</td>
-                    <Link to={`/users/edit/${id}`}>
-                    <button className="btn" >Edit</button>
-               </Link>
-               <button className="btn" onClick={deleteHandler}>delete</button>
-
+                        <td className="date-row">{date}</td>
+                        <td className="title-row"><h1><Link id="title-link" to={`/user/view/${id}`}>{title}</Link></h1></td>
+                        <td>{content.length<50 ? <p>{content}</p> : <p>{ content.substring(0,50)}...<Link to={`/user/view/${id}`}>Read More</Link> </p>}</td>
+                        <td className="btn-row"><Link to={`/users/edit/${id}`}>
+                        <button className="btn" >Edit</button></Link></td>
+                        <td className="btn-row"><button className="btn" onClick={deleteHandler}>delete</button></td>
                     </tr>
-
                 </tbody>
-
-
             </table>
 
         </div>

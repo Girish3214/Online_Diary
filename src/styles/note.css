@@ -1,7 +1,12 @@
+td {
+  margin: 2px;
+}
+
 .note {
   background: #fff;
   border-radius: 7px;
   margin-top: 5px;
+  height: auto;
   /* padding: 10px; */
   width: 98%;
   /* margin: 16px 10px; */
@@ -13,12 +18,12 @@
   font-size: 1.2rem;
   margin-bottom: 6px;
 }
-.note p {
+/* .note p {
   font-size: 0.8em;
   margin-bottom: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
-}
+} */
 
 .note button,
 .back-button {
@@ -47,4 +52,16 @@
 #title-link:hover,
 .back-button:hover {
   color: blueviolet;
+}
+
+.date-row {
+  width: 10rem;
+}
+
+.title-row {
+  width: 10rem;
+}
+
+.btn-row {
+  width: 5rem;
 }

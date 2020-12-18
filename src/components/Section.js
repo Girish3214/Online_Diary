@@ -23,7 +23,7 @@ const Section = () => {
 
     const loadNotes = async() => {
         const note = await axios.get("http://localhost:3003/notes");
-        setNotes(note.data);
+        setNotes(note.data.reverse());
         // sort ==="latest" ? setNotes(note.data.reverse()) : setNotes(note.data);
 
     }
@@ -46,10 +46,10 @@ const Section = () => {
             break;
             case "latest" : setNotes(notes.reverse());
             break;
-            case "oldest"  : setNotes(notes);
+            case "oldest"  : setNotes(notes.reverse());
             break;
 
-            default: setNotes(notes);
+            default: setNotes(notes.reverse());
 
         }
     }

@@ -45,8 +45,8 @@ const Form = () => {
 
 
 
-            <form class="row g-3 needs-validation form-container" onSubmit={submitHandler} >
-                  <div class="col-md-4">
+            <form className="row g-3 needs-validation form-container" onSubmit={submitHandler} >
+                  <div className="col-md-4">
                     <label for="validationCustom01" className="form-label">Set Date*</label>
                     <input type="date" className="form-control inputText" id="validationCustom01" name="date" value={date} onChange={handleChange} required />
                     <div className="valid-feedback">
