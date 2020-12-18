@@ -23,7 +23,7 @@ const Note = ({ date, title, content, id, loadNotes}) => {
             </div> */}
 
 
-            <table class="table note">
+            <table className="table note">
                 <tbody>
                     <tr>
                     <td>{date}</td>

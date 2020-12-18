@@ -2,33 +2,21 @@
   "notes": [
     {
       "id": 1,
-      "date": "2020-12-12",
-      "title": "asd",
-      "content": "123"
+      "date": "2021-01-01",
+      "title": "First",
+      "content": "knlefn ok inskjab"
     },
     {
       "id": 2,
-      "date": "2020-12-19",
-      "title": "First",
-      "content": "React Hook useEffect has a missing dependency: 'loadNotes'. Either include it or remove the dependency array  react-hooks/exhaustive-deps"
+      "date": "2021-02-25",
+      "title": "1",
+      "content": "k ns as ns"
     },
     {
       "id": 3,
-      "date": "2020-12-19",
-      "title": "new",
-      "content": "kj nl"
-    },
-    {
-      "id": 6,
-      "date": "2020-12-04",
-      "title": "First",
-      "content": "asfnk lf"
-    },
-    {
-      "id": 7,
-      "date": "2020-01-08",
-      "title": "new",
-      "content": "kjbdcakbjsbc"
+      "date": "2020-02-18",
+      "title": "5",
+      "content": "lorem\nlksn iu bhflidjbcld"
     }
   ]
 }

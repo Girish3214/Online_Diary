@@ -10,32 +10,51 @@ const Section = () => {
     
     const [notes, setNotes]=useState([]);
     
-    const [sort, setSort] = useState("latest");
+    const [sort, setSort] = useState("All");
     const [month, setmonth] = useState("Jan");
 
-    const [newNotes, setNewNotes] = useState([])
-
-        
-
-            
-    useEffect(()=> {
+    const [newNotes, setNewNotes] = useState(notes)
+    
+    useEffect(() => {
         loadNotes();
-        loadMonth();
-    },[sort, month]);
-
+    },[])
+        
     // getting data from API------
 
     const loadNotes = async() => {
         const note = await axios.get("http://localhost:3003/notes");
-        sort ==="latest" ? setNotes(note.data.reverse()) : setNotes(note.data);
+        setNotes(note.data);
+        // sort ==="latest" ? setNotes(note.data.reverse()) : setNotes(note.data);
 
     }
 
+            
+    useEffect(()=> {
+        loadMonth();
+        sortingHandler();
+    },[sort, month]);
 
-    
+
+    // notes=newNotes;
     const sortHandler = (e) => {
         setSort(e.target.value);
     }
+
+    const sortingHandler = () => {
+        switch(sort){
+            case "All" : setNotes(notes);
+            break;
+            case "latest" : setNotes(notes.reverse());
+            break;
+            case "oldest"  : setNotes(notes);
+            break;
+
+            default: setNotes(notes);
+
+        }
+    }
+
+
 
 
     const monthHandler = (e) => {
@@ -81,13 +100,14 @@ const Section = () => {
     return (
         <div>
         <div>
-                    <select onChange={sortHandler} defaultValue>
+                    <select className="inputText"  onChange={sortHandler}>
+                        <option value="All" defaultValue>All</option>
                         <option value="latest">Latest</option>
                         <option value="oldest">Oldest</option>
                     </select>
                 </div>
                 <div>
-                    <select onChange={monthHandler} defaultValue>
+                    <select className="inputText" onChange={monthHandler} defaultValue>
                         {months.map((mont, x)=>(                        
                             <option value={mont} key={ x + 1 }>
                                 {mont}
@@ -96,14 +116,18 @@ const Section = () => {
 
                     </select>
                 </div>
-                {newNotes === (month==="Jan" ? newNotes : notes)}
 
-            {newNotes.map( (noteItem, index) => {
+            {sort ==="All"? (notes.map( (noteItem, index) => {
                 return (
                     <Note key={index} id={noteItem.id} date={noteItem.date} title={noteItem.title} 
                 content={noteItem.content} loadNotes={loadNotes}
                 />);
-            })}
+            })): (newNotes.map( (noteItem, index) => {
+                return (
+                    <Note key={index} id={noteItem.id} date={noteItem.date} title={noteItem.title} 
+                content={noteItem.content} loadNotes={loadNotes}
+                />);
+            }))}
         </div>
     )
 }
