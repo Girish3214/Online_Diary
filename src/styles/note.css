@@ -1,32 +1,50 @@
 .note {
   background: #fff;
   border-radius: 7px;
-  box-shadow: 0 2px 5px #ccc;
-  padding-left: 20px;
-  width: 100%;
-  margin: 16px 0;
+  margin-top: 5px;
+  /* padding: 10px; */
+  width: 98%;
+  /* margin: 16px 10px; */
   float: left;
 }
 .note h1 {
-  font-size: 1.1em;
+  display: inline-block;
+  width: auto;
+  font-size: 1.2rem;
   margin-bottom: 6px;
 }
 .note p {
-  font-size: 1.1em;
+  font-size: 0.8em;
   margin-bottom: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-.note button {
+.note button,
+.back-button {
   align-items: center;
   position: relative;
   float: right;
   margin: 10px;
-  color: #ceb06e;
+  color: #c74837;
   border: none;
   width: auto;
-  height: 36px;
+  height: auto;
   cursor: pointer;
   outline: none;
+}
+
+#title-link {
+  text-decoration: none;
+  font-family: Geneva, Tahoma, sans-serif;
+  transition: transform 450ms;
+}
+
+.back-button {
+  text-decoration: none;
+}
+
+#title-link:hover,
+.back-button:hover {
+  color: blueviolet;
 }

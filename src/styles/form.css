@@ -2,6 +2,7 @@
   /* display: flex; */
   text-align: center;
   justify-content: center;
+  width: auto;
 }
 
 .inputText,
@@ -23,7 +24,7 @@
 }
 
 .inputTextArea {
-  width: 100%;
+  width: 96%;
   height: 5rem;
 }
 
@@ -39,9 +40,8 @@
   background: #f5ba13;
   color: #fff;
   border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  padding: 5px;
+  width: auto;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;

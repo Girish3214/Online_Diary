@@ -1,0 +1,12 @@
+#NotFound {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c9cbff;
+  width: 100vw;
+  height: 50vh;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
