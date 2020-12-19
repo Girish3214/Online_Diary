@@ -43,7 +43,7 @@ const Search = () => {
     return (
         <div>
             <div id="search-container">
-                <label>Enter Title</label>
+                <label className="label-text">Enter Title</label>
                 <input className="form-control inputText md-3"  autoComplete="off" name="search" type="text" value={searchTerm} placeholder="Title"  onChange={searchHandler} />
                 <div>
                 { searchTerm ==="" ? (notes.map( (noteItem, index) => {

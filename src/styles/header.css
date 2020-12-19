@@ -3,21 +3,23 @@
   flex-direction: row;
   justify-content: space-between;
   background: #ffe5b9;
-  padding: 10px 0;
+  /* padding: 10px 0; */
   width: 50em;
 }
 
 .title-name {
+  margin-top: 10px;
   font-size: 2.5rem;
   font-weight: bold;
-  margin-left: 10px;
+  padding: 5px;
   justify-content: center;
   color: blueviolet;
 }
 
 .options {
-  padding-top: 20px;
+  padding-top: 5px;
   margin: 10px;
+  text-align: center;
 }
 
 .option-name {
@@ -29,4 +31,11 @@
 
 .option-name:hover {
   color: rgb(46, 221, 75);
+}
+
+@media screen and (max-width: 600px) {
+  .option-name {
+    font-size: 2.5em;
+    margin: 0 5px;
+  }
 }

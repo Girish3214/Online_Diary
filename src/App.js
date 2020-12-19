@@ -8,6 +8,7 @@ import Search from './components/pages/Search'
 import View from './components/pages/View'
 // className="main-body"
 import "./styles/section.css"
+import Footer from "./components/Footer";
 const App = () => {
   return (
     <div  className="container">

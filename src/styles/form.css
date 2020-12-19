@@ -63,6 +63,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .inputText {
+    font-size: 1.8em;
+    height: 2em;
+  }
   .label-text {
     font-size: 2em;
   }

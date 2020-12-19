@@ -9,7 +9,7 @@ const View = () => {
     const { id } = useParams();
     useEffect(() => {
         viewHandler();
-    },[viewNote]);
+    },[]);
 
     const { date, title, content } = viewNote;
 
@@ -19,11 +19,13 @@ const View = () => {
     }
 
     return (
-        <div className="note">
-            <h1>{title}</h1>
-            <h3>{date}</h3>
-            <p>{content}</p>
-            <Link className="back-button" to="/" ><h3>Back</h3></Link>
+        <div  className="view-note">
+            <div>
+                <h1>{title}</h1><hr />
+                <h3>{date}</h3><hr />
+                <p>{content}</p>
+                <Link className="back-button" to="/" ><h3>Back</h3></Link>
+            </div>
         </div>
     )
 }

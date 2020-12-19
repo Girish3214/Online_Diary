@@ -44,7 +44,7 @@ const Edit = () => {
         <div  className="main-body">
         <label>Edit Notes</label>
             <form className="form-container" >
-                <input name="date" value={date} className="inputDateText" type="date"  onChange={handleChange}/>
+                <input name="date" value={date} className="inputText" type="date"  onChange={handleChange}/>
                 <input name="title" value={title}  className="inputText" type="text" placeholder="Title of Topic" onChange={handleChange} />
                 <textarea name="content" value={content} className="inputTextArea" placeholder="Start" onChange={handleChange} />
                 <button className="submit-btn" onClick={submitHandler}>Edit</button>
