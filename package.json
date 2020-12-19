@@ -18,6 +18,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "site": "online-story-1",
     "start": "react-scripts start",
     "json-server": "json-server --watch db.json --port 3003",
     "dev": "concurrently \"npm start\" \"npm run json-server\"",

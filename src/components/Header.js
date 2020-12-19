@@ -4,7 +4,7 @@ import "../styles/header.css";
 
 const Header = () => {
     return (
-        <header className="title" style= {{"margin-left": "-40px", width: "74.7rem"}}>
+        <header className="title">
             <h1 className="title-name" to="/">Online Diary</h1>
             <div className="options">
                 <NavLink className="option-name" exact to="/">Home</NavLink>

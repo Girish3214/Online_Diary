@@ -9,7 +9,7 @@ const View = () => {
     const { id } = useParams();
     useEffect(() => {
         viewHandler();
-    },[]);
+    },[viewNote]);
 
     const { date, title, content } = viewNote;
 

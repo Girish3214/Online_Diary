@@ -48,7 +48,6 @@ const Section = () => {
             break;
             case "oldest"  : setNotes(notes.reverse());
             break;
-
             default: setNotes(notes.reverse());
 
         }
@@ -98,8 +97,8 @@ const Section = () => {
 
   
     return (
-        <div>
-        <div>
+        <div className="container">
+                <div>
                     <select className="inputText"  onChange={sortHandler}>
                         <option value="All" defaultValue>All</option>
                         <option value="latest">Latest</option>

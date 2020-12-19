@@ -1,6 +1,5 @@
 .main-body {
-  background: #eff8ff;
-  max-height: 250px;
+  max-height: auto;
   padding: 20px;
 }
 

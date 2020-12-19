@@ -29,17 +29,20 @@ const Edit = () => {
         history.push("/");
     }
 
-    useEffect(() => {
-        loadNotes();
-    }, [])
+
 
     const loadNotes = async() => {
         const note = await axios.get(`http://localhost:3003/notes/${id}`);
         setNote(note.data)
     }
 
+    useEffect(() => {
+      loadNotes();
+  }, [])
+
     return (
         <div  className="main-body">
+        <label>Edit Notes</label>
             <form className="form-container" >
                 <input name="date" value={date} className="inputDateText" type="date"  onChange={handleChange}/>
                 <input name="title" value={title}  className="inputText" type="text" placeholder="Title of Topic" onChange={handleChange} />

@@ -18,7 +18,7 @@ const Note = ({ date, title, content, id, loadNotes}) => {
                     <tr>
                         <td className="date-row">{date}</td>
                         <td className="title-row"><h1><Link id="title-link" to={`/user/view/${id}`}>{title}</Link></h1></td>
-                        <td>{content.length<50 ? <p>{content}</p> : <p>{ content.substring(0,50)}...<Link to={`/user/view/${id}`}>Read More</Link> </p>}</td>
+                        <td>{content.length<50 ? <p>{content}</p> : <p>{ content.substring(0,75)}...<Link to={`/user/view/${id}`}>Read More</Link> </p>}</td>
                         <td className="btn-row"><Link to={`/users/edit/${id}`}>
                         <button className="btn" >Edit</button></Link></td>
                         <td className="btn-row"><button className="btn" onClick={deleteHandler}>delete</button></td>
