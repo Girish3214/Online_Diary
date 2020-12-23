@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/DairyHosting/static/css/main.46ad0c75.chunk.css",
+    "main.js": "/DairyHosting/static/js/main.2a9a60c7.chunk.js",
+    "main.js.map": "/DairyHosting/static/js/main.2a9a60c7.chunk.js.map",
+    "runtime-main.js": "/DairyHosting/static/js/runtime-main.154e31ca.js",
+    "runtime-main.js.map": "/DairyHosting/static/js/runtime-main.154e31ca.js.map",
+    "static/js/2.e6604a4d.chunk.js": "/DairyHosting/static/js/2.e6604a4d.chunk.js",
+    "static/js/2.e6604a4d.chunk.js.map": "/DairyHosting/static/js/2.e6604a4d.chunk.js.map",
+    "index.html": "/DairyHosting/index.html",
+    "static/css/main.46ad0c75.chunk.css.map": "/DairyHosting/static/css/main.46ad0c75.chunk.css.map",
+    "static/js/2.e6604a4d.chunk.js.LICENSE.txt": "/DairyHosting/static/js/2.e6604a4d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.154e31ca.js",
+    "static/js/2.e6604a4d.chunk.js",
+    "static/css/main.46ad0c75.chunk.css",
+    "static/js/main.2a9a60c7.chunk.js"
+  ]
+}
